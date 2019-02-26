@@ -1,0 +1,25 @@
+body{padding-top: 20px;}
+header h3{text-align: center;font-size: 30px;line-height: 40px;font-weight: bold;}
+body h4{text-align: center;font-size: 24px;}
+#list{margin: 20px 0 0;padding: 0;font-size: 0;}
+#list li{display: inline-block;width: 50%;font-size: 20px;margin: 0;text-align: center;}
+#list li.hover p{background: #ccc;}
+#list li p{width: 60%;padding: 8px 0;margin: 0 auto;text-align: center;background: #ff6600;border: 1px solid #ff6600;
+        border-radius: 8px;color: #fff;font-size: 20px;line-height: 24px;}
+#list li.hover p{background: #ccc;color: #fff;border: 1px solid #ccc;}
+section{padding:20px 5px 10px;}
+section h5{font-size: 20px;line-height: 36px;font-weight: bold;text-align: left;text-indent: 5px;}
+section ul{margin: 0;padding: 0;}
+section ul li{display: block;height: 36px;margin: 5px 0;}
+section ul li p{display: inline-block;font-size: 16px;line-height: 36px;}
+section ul li p:first-child{text-align: right;width: 40%;}
+section ul li p:last-child{text-align: left;width: 55%;}
+section ul li p input{border: 1px solid #333;height: 30px;font-size: 18px;line-height: 30px;width: 95%;display: block;
+        padding-left: 10px;border-radius: 6px;}
+button{display: block;text-align: center;background: #ff6600;border: 1px solid #ff6600;padding: 8px 30px;margin: 20px auto;
+        border-radius: 8px;color: #fff;font-size: 20px;line-height: 24px;}
+button:focus{background: #fff;color: #333;border: 1px solid #333;}
+section ul.result-ul li p{display: inline-block;}
+section ul.result-ul li p:first-child{width: 40%;}
+section ul.result-ul li text{font-size: 18px;line-height: 30px;}
+.result-word{color: #ff0000;}

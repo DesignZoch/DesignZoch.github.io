@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/calculator.css">
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/calculator.js"></script>
+    <title>珠光白墨比例计算</title>
+</head>
+<body>
+<header>
+    <h3>珠光及白墨比例计算器</h3>
+</header>
+<ul id="list">
+    <li><p id="count">配备新墨</p></li>
+    <li><p id="change">调整比例</p></li>
+</ul>
+<section id="count_page">
+    <h4>配备新墨</h4>
+    <h5>输入数据</h5>
+    <ul>
+        <li>
+            <p class="title">介质重量：</p>
+            <p class="input-word"><input type="number" class="T" placeholder="输入介质重量"></p>
+        </li>
+        <li>
+            <p class="title">需要的珠光比例：</p>
+            <p class="input-word"><input type="number" class="PT" placeholder="请输入珠光的百分比" oninput="if(value.length>2)value=value.slice(0,2)"></p>
+        </li>
+    </ul>
+    <button id="submit2">计算结果</button>
+    <h5>输出数据</h5>
+        <ul class="result-ul">
+            <li>
+                <p class="result-title">配后总重量：</p>
+                <p class="result-word WT"></p><text>KG</text>
+            </li>
+            <li>
+                <p class="result-title">需加珠光重量：</p>
+                <p class="result-word M"></p><text>KG</text>
+            </li>
+        </ul>
+</section>
+<section id="change_page">
+    <h4>调整比例</h4>
+    <h5>输入数据</h5>
+    <ul>
+        <li>
+            <p class="title">当前总重量：</p>
+            <p class="input-word"><input type="number" class="W1" placeholder="输入当前总重量"></p>
+        </li>
+        <li>
+            <p class="title">当前珠光百分比：</p>
+            <p class="input-word"><input type="number" class="P1" placeholder="请输入当前珠光百分比"  oninput="if(value.length>2)value=value.slice(0,2)"></p>
+        </li>
+        <li>
+            <p class="title">需要珠光百分比：</p>
+            <p class="input-word"><input type="number" class="P2" placeholder="请输入需要珠光百分比"  oninput="if(value.length>2)value=value.slice(0,2)"></p>
+        </li>
+
+    </ul>
+    <button id="submit">计算结果</button>
+    <h5>输出数据</h5>
+    <ul class="result-ul">
+        <li>
+            <p class="result-title">当前珠光重量：</p>
+            <p class="result-word W1A"></p><text>KG</text>
+        </li>
+        <li>
+            <p class="result-title">当前介质重量：</p>
+            <p class="result-word W1B"></p><text>KG</text>
+        </li>
+        <li>
+            <p class="result-title">调整后总重量：</p>
+            <p class="result-word W2"></p><text>KG</text>
+        </li>
+        <li>
+            <p class="result-title">需加珠光重量：</p>
+            <p class="result-word W2A"></p><text>KG</text>
+        </li>
+        <li>
+            <p class="result-title">需加入介质重量：</p>
+            <p class="result-word W2B"></p><text>KG</text>
+        </li>
+    </ul>
+</section>
+</body>
+</html>
